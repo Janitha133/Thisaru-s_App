@@ -1,31 +1,38 @@
-import React from 'react';
-import '../App.css';
-import { Button } from './Button';
-import './HeroSection.css';
+import { Col, Row } from "antd";
+import "../App.css";
+import { Button } from "./Button";
+import "./HeroSection.css";
 
 function HeroSection() {
   return (
-    <div className='hero-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
-      <h1>ADVENTURE AWAITS</h1>
-      <p>What are you waiting for?</p>
-      <div className='hero-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          GET STARTED
-        </Button>
-        <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
-          onClick={console.log('hey')}
-        >
-          WATCH TRAILER <i className='far fa-play-circle' />
-        </Button>
-      </div>
+    <div className="hero-container">
+      <Row style={{ height: "100%" }}>
+        <Col className="gutter-row" xs={24} sm={24} md={12} lg={12} xl={12}>
+          <div className="left-side-area">
+            <div className="title_1">
+              <h1>Always make room for</h1>
+              <h1>beauty in your life</h1>
+              <p>
+                At Prague we are passionate about making people feel good while looking their best.
+                Attending advanced education allows us to keep up with the latest trends and provide
+                each guest with a unique & customizable result. For your convenience, Schedule your
+                reservation today!
+              </p>
+              <Button
+                className="btn"
+                buttonStyle="btn--outline"
+                buttonSize="btn--medium"
+                onClick={console.log("hey")}
+                otherClasses="left-side-area-btn">
+                Book now
+              </Button>
+            </div>
+          </div>
+        </Col>
+        <Col className="gutter-row" xs={24} sm={24} md={12} lg={12} xl={12}>
+          <div>col-6</div>
+        </Col>
+      </Row>
     </div>
   );
 }
