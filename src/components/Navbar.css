@@ -1,5 +1,5 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: white;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -8,6 +8,10 @@
   position: sticky;
   top: 0;
   z-index: 999;
+}
+
+.navbar ul {
+  margin-bottom: 0px;
 }
 
 .navbar-container {
@@ -37,7 +41,7 @@
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
+  /* grid-gap: 10px; */
   list-style: none;
   text-align: center;
   width: 60vw;
@@ -45,12 +49,12 @@
   margin-right: 2rem;
 }
 
-.nav-item {
+/* .nav-item {
   height: 80px;
-}
+} */
 
 .nav-links {
-  color: #fff;
+  color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -59,8 +63,9 @@
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid #fff;
-  transition: all 0.2s ease-out;
+  color: #b99a5f;
+  /* border-bottom: 4px solid #fff;
+  transition: all 0.2s ease-out; */
 }
 
 .fa-bars {
