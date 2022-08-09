@@ -1,14 +1,13 @@
-import Cards from "../../components/Cards";
+import Services from "../../components/Services";
 import Footer from "../../components/Footer";
 import HeroSection from "../../components/HeroSection";
-import Navbar from "../../components/Navbar";
 
 export const Home = () => {
 
   return (
     <div>
       <HeroSection />
-      <Cards />
+      <Services />
       <Footer />
     </div>
   );
