@@ -49,3 +49,16 @@
   padding-left: 35px;
   padding-right: 35px;
 }
+
+.btn-pay {
+  background: #b99a5f;
+  border: 1px solid #b99a5f;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.btn-pay:hover {
+  background: #947a4b;
+  border: 1px solid #947a4b;
+  color: #ffffff;
+}
